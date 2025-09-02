@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+  <section id="breadcrumb" class="breadcrumb section" data-aos="fade-up">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Example Return Tiers</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Illustrative returns based on investment options.</p>
+    </div>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="pricing-item">
+            <h3>Direct Investment</h3>
+            <h4>10% Annual</h4>
+            <ul>
+              <li>Full interest from specific mortgage</li>
+              <li>High transparency</li>
+              <li>Monthly or quarterly payments</li>
+            </ul>
+            <a href="{% url 'direct_investment' %}" class="btn-get-started">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="pricing-item featured">
+            <h3>Pooled Fund</h3>
+            <h4>9% Annual</h4>
+            <ul>
+              <li>Diversified across multiple mortgages</li>
+              <li>Steady, hands-off income</li>
+              <li>Lower risk</li>
+            </ul>
+            <a href="{% url 'pooled_fund' %}" class="btn-get-started">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="pricing-item">
+            <h3>Fixed Return</h3>
+            <h4>8% Annual</h4>
+            <ul>
+              <li>Guaranteed return rate</li>
+              <li>Simple and predictable</li>
+              <li>Flexible terms</li>
+            </ul>
+            <a href="{% url 'fixed_return' %}" class="btn-get-started">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+  <section id="breadcrumb" class="breadcrumb section" data-aos="fade-up">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Testimonials</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <p data-aos="fade-up" data-aos-delay="100">What our investors say</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="200">
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": { "delay": 5000 },
+            "slidesPerView": "auto",
+            "pagination": { "el": ".swiper-pagination", "type": "bullets", "clickable": true },
+            "breakpoints": { "320": { "slidesPerView": 1, "spaceBetween": 40 }, "1200": { "slidesPerView": 3, "spaceBetween": 20 } }
+          }
+        </script>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>"The direct investment option gave me full transparency and great returns!"</p>
+              <img src="{% static 'img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="Saul Goodman">
+              <h3>Saul Goodman</h3>
+              <h4>Investor</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>"Pooled fund provided steady income with low risk. Highly recommend!"</p>
+              <img src="{% static 'img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="Sara Wilsson">
+              <h3>Sara Wilsson</h3>
+              <h4>Investor</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>"Fixed return investment is perfect for predictable income!"</p>
+              <img src="{% static 'img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="John Larson">
+              <h3>John Larson</h3>
+              <h4>Investor</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

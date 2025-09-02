@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Calculator - Horizon Capital MIC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Horizon Capital MIC</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="calculator.html" class="active">Calculator</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Calculator Hero -->
+    <section class="hero calculator-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Investment Calculator</h1>
+                <p>See how much you could earn with our real estate-backed investment options.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section class="calculator-section">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="calculator-form">
+                    <h2>Calculate Your Returns</h2>
+                    <form id="calculatorForm">
+                        <div class="form-group">
+                            <label for="investmentType">Investment Type</label>
+                            <select id="investmentType" name="investmentType" required>
+                                <option value="">Select an option</option>
+                                <option value="direct">Direct Mortgage Investment (10%)</option>
+                                <option value="pooled">Pooled Mortgage Fund (9%)</option>
+                                <option value="fixed">Fixed Return Investment (8%)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="investmentAmount">Investment Amount (CAD)</label>
+                            <input type="number" id="investmentAmount" name="investmentAmount" min="10000" step="1000" value="100000" required>
+                            <input type="range" id="amountRange" min="10000" max="1000000" step="1000" value="100000">
+                        </div>
+                        <div class="form-group">
+                            <label for="investmentTerm">Investment Term (Years)</label>
+                            <select id="investmentTerm" name="investmentTerm" required>
+                                <option value="1">1 Year</option>
+                                <option value="3">3 Years</option>
+                                <option value="5" selected>5 Years</option>
+                                <option value="10">10 Years</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="compounding">Compounding Frequency</label>
+                            <select id="compounding" name="compounding" required>
+                                <option value="monthly">Monthly</option>
+                                <option value="quarterly">Quarterly</option>
+                                <option value="annually">Annually</option>
+                            </select>
+                        </div>
+                        <button type="button" id="calculateBtn" class="cta-button">Calculate Returns</button>
+                    </form>
+                </div>
+                <div class="calculator-results">
+                    <h2>Projected Returns</h2>
+                    <div class="result-card">
+                        <div class="result-item">
+                            <span class="result-label">Initial Investment</span>
+                            <span class="result-value" id="initialInvestment">$100,000.00</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Annual Return Rate</span>
+                            <span class="result-value" id="returnRate">0%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label">Total Interest Earned</span>
+                            <span class="result-value" id="totalInterest">$0.00</span>
+                        </div>
+                        <div class="result-item highlight">
+                            <span class="result-label">Total Value</span>
+                            <span class="result-value" id="totalValue">$100,000.00</span>
+                        </div>
+                    </div>
+                    <div class="result-chart">
+                        <canvas id="returnsChart" width="400" height="200"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How are returns calculated?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Returns are calculated based on the annual interest rate for each investment option, compounded according to your selected frequency. The calculator provides an estimate of potential earnings, but actual returns may vary.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Are these returns guaranteed?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>While our Fixed Return Investment offers a predetermined rate, Direct and Pooled investments returns are based on historical performance and are not guaranteed. All investments are secured by Canadian real estate mortgages.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the minimum investment?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The minimum investment varies by product. Direct Mortgage Investments typically start at $100,000, while Pooled and Fixed Return options may have lower minimums. Contact us for specific details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Horizon Capital MIC</h3>
+                    <p>Building steady wealth through real estate-backed investments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Financial Street, Toronto, ON</p>
+                    <p><i class="fas fa-phone"></i> (416) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@horizoncapitalmic.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Horizon Capital MIC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+    <script src="calculator.js"></script>
+</body>
+</html>

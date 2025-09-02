@@ -1,0 +1,382 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Horizon Capital MIC - Real Estate Backed Investments</title>
+  <meta name="description" content="Grow your wealth with real estate-backed investments. Choose from transparent, diversified, or fixed return options secured by Canadian real estate.">
+  <meta name="keywords" content="MIC, mortgage investment, real estate investment, Canadian real estate, investment options">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Horizon Capital MIC
+  * Author: Horizon Capital MIC
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="#" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Horizon Capital MIC</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li class="dropdown"><a href="{% url 'services' %}"><span>Investments</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{% url 'services' %}">Direct Mortgage</a></li>
+              <li><a href="{% url 'services' %}">Pooled Fund</a></li>
+              <li><a href="{% url 'services' %}">Fixed Return</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'calculator' %}">Calculator</a></li>
+          <li><a href="{% url 'borrower_solutions' %}">Borrower Solutions</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %}" alt="">
+          <div class="container">
+            <h2>Grow Your Wealth with Real Estate-Backed Investments</h2>
+            <p>Choose from transparent, diversified, or fixed return options — all secured by Canadian real estate.</p>
+            <a href="{% url 'services' %}" class="btn-get-started">Explore Investment Options</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-2.jpg' %}" alt="">
+          <div class="container">
+            <h2>Security and Consistent Returns</h2>
+            <p>Every investment is backed by carefully selected Canadian real estate mortgages.</p>
+            <a href="{% url 'about' %}" class="btn-get-started">Learn More About Us</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="{% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %}" alt="">
+          <div class="container">
+            <h2>Flexible Borrower Solutions</h2>
+            <p>Construction loans, bridge financing, residential and equity take-outs for your needs.</p>
+            <a href="{% url 'borrower_solutions' %}" class="btn-get-started">Borrower Solutions</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="{% static 'assets/img/about.jpg' %}">
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title">Who We Are</h2>
+            <div class="our-story">
+              <h3>Horizon Capital MIC</h3>
+              <p>At <strong>Horizon Capital MIC</strong>, we make it simple for everyday investors to build steady wealth through real estate. As a Mortgage Investment Corporation, we pool investor funds and place them into carefully selected mortgages, all backed by Canadian property. Our focus is clear: <strong>security and consistent returns.</strong></p>
+              
+              <h4>Investment Snapshot</h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span><strong>Example Returns:</strong> 8-10% annually</span></li>
+                <li><i class="bi bi-check-circle"></i> <span><strong>Security:</strong> Every investment backed by Canadian real estate mortgages</span></li>
+                <li><i class="bi bi-check-circle"></i> <span><strong>Income Distribution:</strong> Interest collected from borrowers distributed back to investors</span></li>
+              </ul>
+              
+              <p>With three investment styles — Direct Mortgage Investment, Pooled Mortgage Fund, and Fixed Return Investment — you can choose the approach that best fits your lifestyle and goals.</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <div class="icon">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Direct Mortgage Investment</h3>
+              </a>
+              <p>Your money goes directly into a specific mortgage deal. You earn the full interest paid by the borrower on that mortgage.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <i class="bi bi-collection"></i>
+              </div>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Pooled Mortgage Fund</h3>
+              </a>
+              <p>Your money goes into a pool of mortgages managed by us. This spreads out the risk and gives you steady returns.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <div class="icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <a href="{% url 'services' %}" class="stretched-link">
+                <h3>Fixed Return Investment</h3>
+              </a>
+              <p>This option gives you certainty and predictability with a fixed return rate locked in for your term.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Borrower Solutions Section -->
+    <section id="borrower-teaser" class="borrower-teaser section">
+
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h2>Borrower Solutions</h2>
+            <p>We don't just serve investors — we also provide flexible lending solutions for borrowers who need alternatives to traditional banks.</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Construction loans</li>
+              <li><i class="bi bi-check-circle"></i> Bridge financing</li>
+              <li><i class="bi bi-check-circle"></i> Residential and equity take-outs</li>
+            </ul>
+            <p>We help clients access the funds they need, when they need them.</p>
+            <a href="{% url 'borrower_solutions' %}" class="btn btn-primary">Learn More About Borrowing</a>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <img src="{% static 'assets/img/borrower_solution_.png' %}" class="img-fluid" alt="Borrower Solutions">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Borrower Solutions Section -->
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta section accent-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Interested in Investing? Connect With Us Today</h3>
+            <p>Tell us a little about your goals, and our team will guide you through the right investment path.</p>
+            <a class="cta-btn" data-bs-toggle="modal" data-bs-target="#investmentModal">Get Started</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /CTA Section -->
+
+  </main>
+
+  <!-- Investment Modal -->
+  <div class="modal fade" id="investmentModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Investment Inquiry</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+            <div class="mb-3">
+              <label for="investment-interest" class="form-label">Investment Interest</label>
+              <select class="form-select" id="investment-interest">
+                <option value="">Select an option</option>
+                <option value="direct">Direct Mortgage Investment</option>
+                <option value="pooled">Pooled Mortgage Fund</option>
+                <option value="fixed">Fixed Return Investment</option>
+                <option value="unsure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Investment Modal -->
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="#" class="logo d-flex align-items-center">
+            <span class="sitename">Horizon Capital MIC</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>123 Investment Street</p>
+            <p>Toronto, ON M5X 1A1</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 555 123 4567</span></p>
+            <p><strong>Email:</strong> <span>info@horizoncapitalmic.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'services' %}">Investments</a></li>
+            <li><a href="{% url 'borrower_solutions' %}">Borrower Solutions</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Investment Options</h4>
+          <ul>
+            <li><a href="{% url 'services' %}">Direct Mortgage</a></li>
+            <li><a href="{% url 'services' %}">Pooled Fund</a></li>
+            <li><a href="{% url 'services' %}">Fixed Return</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter for updates on investment opportunities and market insights!</p>
+          <form action="{% url 'subscribe' %}" method="post" class="php-email-form">
+            {% csrf_token %}
+            <div class="newsletter-form">
+              <input type="email" name="email" required>
+              <input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Horizon Capital MIC</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

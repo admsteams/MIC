@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Capital MIC - Real Estate Backed Investments</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>Horizon Capital MIC</h2>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Grow Your Wealth with Real Estate-Backed Investments</h1>
+                <p>Choose from transparent, diversified, or fixed return options — all secured by Canadian real estate.</p>
+                <a href="services.html" class="cta-button">Explore Investment Options <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjJmMmYyIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgZmlsbD0iIzAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zNWVtIj5SZWFsIEVzdGF0ZSBJbnZlc3RtZW50PC90ZXh0Pjwvc3ZnPg==" alt="Real Estate Investment">
+            </div>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section class="about">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="about-content">
+                <p>At <strong>Horizon Capital MIC</strong>, we make it simple for everyday investors to build steady wealth through real estate. As a Mortgage Investment Corporation, we pool investor funds and place them into carefully selected mortgages, all backed by Canadian property. Our focus is clear: <strong>security and consistent returns.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Snapshot -->
+    <section class="investment-snapshot">
+        <div class="container">
+            <h2>Investment Snapshot</h2>
+            <div class="snapshot-cards">
+                <div class="snapshot-card">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Example Returns</h3>
+                    <p>8-10% annually (based on past investment examples across Direct, Pooled, and Fixed Return options)</p>
+                </div>
+                <div class="snapshot-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security</h3>
+                    <p>Every investment is backed by Canadian real estate mortgages</p>
+                </div>
+                <div class="snapshot-card">
+                    <div class="card-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Income Distribution</h3>
+                    <p>Interest collected from borrowers is distributed back to our investors as steady returns</p>
+                </div>
+            </div>
+            <div class="investment-styles">
+                <p>With three investment styles — <strong>Direct Mortgage Investment</strong>, <strong>Pooled Mortgage Fund</strong>, and <strong>Fixed Return Investment</strong> — you can choose the approach that best fits your lifestyle and goals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Borrower Solutions -->
+    <section class="borrower-solutions">
+        <div class="container">
+            <div class="borrower-content">
+                <h2>Borrower Solutions</h2>
+                <p>We don't just serve investors — we also provide flexible lending solutions for borrowers who need alternatives to traditional banks. From <strong>construction loans</strong> and <strong>bridge financing</strong> to <strong>residential and equity take-outs</strong>, we help clients access the funds they need, when they need them.</p>
+                <a href="contact.html" class="cta-button secondary">Learn More About Borrowing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Interested in Investing? Connect with Us Today.</h2>
+                <p>Tell us a little about your goals, and our team will guide you through the right investment path.</p>
+                <button class="cta-button" id="openFormBtn">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Modal -->
+    <div class="modal" id="inquiryModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Investment Inquiry</h2>
+            <form id="inquiryForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="investment">Investment Interest</label>
+                    <select id="investment" name="investment">
+                        <option value="">Select an option</option>
+                        <option value="direct">Direct Mortgage Investment</option>
+                        <option value="pooled">Pooled Mortgage Fund</option>
+                        <option value="fixed">Fixed Return Investment</option>
+                        <option value="unsure">Not Sure Yet</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Investment Amount (CAD)</label>
+                    <input type="number" id="amount" name="amount" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="goals">Investment Goals</label>
+                    <textarea id="goals" name="goals" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Horizon Capital MIC</h3>
+                    <p>Building steady wealth through real estate-backed investments.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="calculator.html">Calculator</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Financial Street, Toronto, ON</p>
+                    <p><i class="fas fa-phone"></i> (416) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@horizoncapitalmic.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Horizon Capital MIC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

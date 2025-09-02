@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+  <section id="breadcrumb" class="breadcrumb section" data-aos="fade-up">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Portfolio</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Portfolio</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Explore our successful investment deals.</p>
+    </div>
+    <div class="container">
+      <ul class="nav nav-tabs isotop-filters" data-aos="fade-up" data-aos-delay="200">
+        <li class="nav-item filter-active" data-filter="*">All</li>
+        <li class="nav-item" data-filter=".filter-direct">Direct</li>
+        <li class="nav-item" data-filter=".filter-pooled">Pooled</li>
+        <li class="nav-item" data-filter=".filter-fixed">Fixed</li>
+      </ul>
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-direct">
+          <img src="{% static 'img/portfolio/direct-1.jpg' %}" class="img-fluid" alt="Direct Investment">
+          <div class="portfolio-info">
+            <h4>Toronto Residential Mortgage</h4>
+            <p>$1M at 10% return</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-pooled">
+          <img src="{% static 'img/portfolio/pooled-1.jpg' %}" class="img-fluid" alt="Pooled Fund">
+          <div class="portfolio-info">
+            <h4>Diversified Mortgage Pool</h4>
+            <p>9% average return</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-fixed">
+          <img src="{% static 'img/portfolio/fixed-1.jpg' %}" class="img-fluid" alt="Fixed Return">
+          <div class="portfolio-info">
+            <h4>Fixed Return Investment</h4>
+            <p>8% locked for 5 years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

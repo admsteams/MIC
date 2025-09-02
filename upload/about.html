@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+  <section id="breadcrumb" class="breadcrumb section" data-aos="fade-up">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="about section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>About Us</h2>
+      <p data-aos="fade-up" data-aos-delay="100">At Horizon Capital MIC, we make it simple for everyday investors to build steady wealth through real estate. As a Mortgage Investment Corporation, we pool investor funds and place them into carefully selected mortgages, all backed by Canadian property. Our focus is clear: security and consistent returns.</p>
+    </div>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+          <h3>Our Mission</h3>
+          <p>We aim to provide accessible, secure, and profitable investment opportunities through real estate-backed mortgages, ensuring transparency and consistent returns for our investors.</p>
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Over 20 years of combined real estate investment experience.</li>
+            <li><i class="bi bi-check-circle"></i> Rigorous mortgage selection process to minimize risk.</li>
+            <li><i class="bi bi-check-circle"></i> Dedicated support for investors and borrowers.</li>
+          </ul>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <img src="{% static 'img/about.jpg' %}" class="img-fluid" alt="About Horizon Capital">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Team</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Meet the experts behind Horizon Capital MIC.</p>
+    </div>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="card">
+            <img src="{% static 'img/team/team-1.jpg' %}" class="img-fluid" alt="John Doe">
+            <div class="card-body">
+              <h4>John Doe</h4>
+              <h5>CEO & Founder</h5>
+              <p>With 15 years in real estate finance, John leads our strategic vision and mortgage selection process.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <img src="{% static 'img/team/team-2.jpg' %}" class="img-fluid" alt="Jane Smith">
+            <div class="card-body">
+              <h4>Jane Smith</h4>
+              <h5>Chief Investment Officer</h5>
+              <p>Jane oversees our investment portfolio, ensuring diversified and secure mortgage investments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="card">
+            <img src="{% static 'img/team/team-3.jpg' %}" class="img-fluid" alt="Michael Lee">
+            <div class="card-body">
+              <h4>Michael Lee</h4>
+              <h5>Head of Borrower Relations</h5>
+              <p>Michael ensures our borrowers receive tailored financing solutions with exceptional service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section light-background" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Expertise</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Our core strengths in real estate investment.</p>
+    </div>
+    <div class="container">
+      <div class="row skills-content">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="progress">
+            <span class="skill">Mortgage Selection <i class="val">95%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 95%;"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Risk Management <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="progress">
+            <span class="skill">Investor Relations <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Market Analysis <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clients Section -->
+  <section id="clients" class="clients section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Our Partners</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Trusted organizations we work with.</p>
+    </div>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-4 col-6 client-logo">
+          <img src="{% static 'img/clients/client-1.png' %}" class="img-fluid" alt="Partner 1">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 client-logo">
+          <img src="{% static 'img/clients/client-2.png' %}" class="img-fluid" alt="Partner 2">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 client-logo">
+          <img src="{% static 'img/clients/client-3.png' %}" class="img-fluid" alt="Partner 3">
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 client-logo">
+          <img src="{% static 'img/clients/client-4.png' %}" class="img-fluid" alt="Partner 4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

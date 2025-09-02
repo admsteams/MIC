@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+  <section id="breadcrumb" class="breadcrumb section" data-aos="fade-up">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="breadcrumb-item"><a href="{% url 'services' %}">Services</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Direct Investment</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="direct" class="services section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Direct Mortgage Investment</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Your money goes directly into a specific mortgage deal. You earn the full interest paid by the borrower on that mortgage...</p>
+      <img src="{% static 'img/portfolio/direct-1.jpg' %}" class="img-fluid mt-4" alt="Direct Investment">
+    </div>
+  </section>
+
+</main>
+{% endblock %}

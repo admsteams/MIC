@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<main class="main">
+
+  <section id="breadcrumb" class="breadcrumb section" data-aos="fade-up">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Borrower Solutions</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="borrower" class="services section" data-aos="fade-up">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Borrower Solutions</h2>
+      <p data-aos="fade-up" data-aos-delay="100">We provide flexible lending solutions for borrowers who need alternatives to traditional banks. From construction loans and bridge financing to residential and equity take-outs, we help clients access the funds they need, when they need them.</p>
+      <ul data-aos="fade-up" data-aos-delay="200">
+        <li><strong>Construction Loans:</strong> Financing for new builds or renovations.</li>
+        <li><strong>Bridge Financing:</strong> Short-term loans to bridge gaps in funding.</li>
+        <li><strong>Residential Mortgages:</strong> Flexible terms for home purchases.</li>
+        <li><strong>Equity Take-Outs:</strong> Access equity in your property for investment or personal use.</li>
+      </ul>
+      <a href="{% url 'contact' %}" class="btn-get-started mt-4" data-aos="fade-up" data-aos-delay="300">Contact Us for Borrowing Options</a>
+    </div>
+  </section>
+
+</main>
+{% endblock %}

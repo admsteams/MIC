@@ -1,0 +1,261 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Borrower Solutions - Horizon Capital MIC</title>
+  <meta name="description" content="Flexible lending solutions for borrowers including construction loans, bridge financing, and equity take-outs.">
+  <meta name="keywords" content="borrower solutions, construction loans, bridge financing, equity take-outs">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Horizon Capital MIC
+  * Author: Horizon Capital MIC
+  ======================================================== -->
+</head>
+
+<body class="borrowers-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center">
+
+      <a href="{% url 'home' %}" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Horizon Capital MIC</h1><span>.</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li class="dropdown"><a href="{% url 'services' %}"><span>Investments</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="{% url 'services' %}">Direct Mortgage</a></li>
+              <li><a href="{% url 'services' %}">Pooled Fund</a></li>
+              <li><a href="{% url 'services' %}">Fixed Return</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'calculator' %}">Calculator</a></li>
+          <li><a href="{% url 'borrower_solutions' %}" class="active">Borrower Solutions</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title accent-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Borrower Solutions</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="current">Borrower Solutions</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Borrower Solutions Section -->
+    <section id="borrower-solutions" class="borrower-solutions section">
+
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h2>Flexible Lending Solutions</h2>
+            <p>We don't just serve investors — we also provide flexible lending solutions for borrowers who need alternatives to traditional banks. Whether you're a real estate developer, investor, or homeowner, we offer customized financing options to meet your specific needs.</p>
+            
+            <div class="solution-item" data-aos="fade-up" data-aos-delay="100">
+              <h3>Construction Loans</h3>
+              <p>We provide financing for ground-up construction, renovations, and development projects. Our construction loans offer:</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Flexible terms tailored to your project timeline</li>
+                <li><i class="bi bi-check-circle"></i> Progress-based disbursements</li>
+                <li><i class="bi bi-check-circle"></i> Competitive rates for qualified projects</li>
+                <li><i class="bi bi-check-circle"></i> Expertise in residential and commercial projects</li>
+              </ul>
+            </div>
+
+            <div class="solution-item" data-aos="fade-up" data-aos-delay="200">
+              <h3>Bridge Financing</h3>
+              <p>Need short-term financing to bridge a gap? Our bridge loans offer:</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Quick closing times (often within days)</li>
+                <li><i class="bi bi-check-circle"></i> Flexible terms from 3 to 24 months</li>
+                <li><i class="bi bi-check-circle"></i> Solutions for property acquisition, renovations, or time-sensitive opportunities</li>
+                <li><i class="bi bi-check-circle"></i> Equity-based lending with less emphasis on credit history</li>
+              </ul>
+            </div>
+
+            <div class="solution-item" data-aos="fade-up" data-aos-delay="300">
+              <h3>Residential and Equity Take-Outs</h3>
+              <p>Access the equity in your property for investments, debt consolidation, or other opportunities:</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Loan-to-value ratios up to 75%</li>
+                <li><i class="bi bi-check-circle"></i> Flexible repayment options</li>
+                <li><i class="bi bi-check-circle"></i> Primary residences, secondary homes, and investment properties</li>
+                <li><i class="bi bi-check-circle"></i> Streamlined application process</li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <img src="{% static 'assets/img/borrower_solution_.png' %}" class="img-fluid" alt="Borrower Solutions">
+            
+            <div class="application-process mt-5" data-aos="fade-up" data-aos-delay="400">
+              <h3>Application Process</h3>
+              <ol>
+                <li><strong>Initial Consultation:</strong> Discuss your needs and property details</li>
+                <li><strong>Documentation:</strong> Provide property information and financial details</li>
+                <li><strong>Property Assessment:</strong> We evaluate the property value and potential</li>
+                <li><strong>Offer Presentation:</strong> Receive your customized financing solution</li>
+                <li><strong>Closing:</strong> Finalize documentation and receive funds</li>
+              </ol>
+              <a href="{% url 'contact' %}" class="btn btn-primary mt-3">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Borrower Solutions Section -->
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta section accent-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>Need Financing Solutions?</h3>
+            <p>Contact us today to discuss your borrowing needs and discover how we can help you achieve your goals.</p>
+            <a href="{% url 'contact' %}" class="cta-btn">Contact Us</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /CTA Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+            <span class="sitename">Horizon Capital MIC</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>123 Investment Street</p>
+            <p>Toronto, ON M5X 1A1</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 555 123 4567</span></p>
+            <p><strong>Email:</strong> <span>info@horizoncapitalmic.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="{% url 'borrower_solutions' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'borrower_solutions' %}">Borrower Solutions</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Investment Options</h4>
+          <ul>
+            <li><a href="{% url 'services' %}">Direct Mortgage</a></li>
+            <li><a href="{% url 'services' %}">Pooled Fund</a></li>
+            <li><a href="{% url 'services' %}">Fixed Return</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter for updates on investment opportunities and market insights!</p>
+          <form action="{% url 'subscribe' %}" method="post" class="php-email-form">
+            {% csrf_token %}
+            <div class="newsletter-form">
+              <input type="email" name="email" required>
+              <input type="submit" value="Subscribe">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Horizon Capital MIC</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
