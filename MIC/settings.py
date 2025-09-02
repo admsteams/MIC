@@ -26,7 +26,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mic-6qe1.onrender.com', 'localhost']
+ALLOWED_HOSTS = ['mic-6qe1.onrender.com', 'localhost', '127.0.0.1']
+
 
 # Application definition
 
